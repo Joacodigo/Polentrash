@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;600;700&family=Shadows+Into+Light&display=swap');
 
+
+
 /* cositas  generales */
 
 
@@ -15,6 +17,7 @@
     
     }
     
+
 
     
 img {
@@ -71,10 +74,19 @@ font-weight: 700;
   .titulo {
     display: flex;
     margin-top: 3rem;
+    margin-bottom: 1rem;
     justify-content: center;
     }
 
 /* cositas de menú */
+
+.btn {
+
+
+  color: white;
+  border-color: white;
+}
+
 
   .menu {
     background-color: #CD5334;
@@ -88,6 +100,10 @@ font-weight: 700;
     justify-content: space-between;
   }
   
+  .nav-item a{
+    color: white;
+  }
+
 
   .menu-list {
       display: flex;
@@ -170,17 +186,33 @@ color: rgb(88, 88, 218);
 /* cositas de comic */
 
 .tarjetas {
-  margin: 5rem;
+  margin-inline: 5rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
   display: flex;
   gap: 1rem;
   }
   
 
-  .carousel{
+  @media (max-width: 768px){
 
-width: 30rem;
+.tarjetas{
+
+flex-wrap: wrap;
+gap: 2rem;
+margin: 2rem;
+
+}
 
   }
+  
+
+  .carousel{
+
+width: 40rem;
+
+  }
+
   
   .tarjeta {
     background-color: rgb(254, 254, 174);
@@ -247,35 +279,56 @@ display: none;
 
 .presentacion {
 
-display: flex;
-align-items: center;
-justify-content: space-evenly;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: "logo texto texto";
+justify-items: center;
+
 
 }
+
+@media (max-width: 768px) {
+  .presentacion {
+
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo"
+    "texto" "texto";
+  }
+  
+}
+
 
 .saludo {
   padding: 3rem;
 border-radius: 100%;
 width: 20rem;
+grid-area:logo ;
+
 
 }
 
 .soyPolenta {
   background-color: rgb(254, 254, 174) ;
-display: flex;
-flex-direction: column;
 padding: 1.5rem;
 border-radius:1rem;
+grid-area: texto;
+
+}
+
+.todoinfluencias{
+
+display: flex;
+justify-content: center;
 
 }
 
 .textoInfluencias{
 
   background-color: rgb(254, 254, 174) ;
-  display: flex;
+width: fit-content;
   padding: 1.5rem;
   border-radius:1rem;
-
+margin: 1rem;
 
 
 
@@ -283,27 +336,55 @@ border-radius:1rem;
 
 
 .influencias{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
  padding: 1rem;
- margin-bottom: 3rem;
+ margin-bottom: 1rem;
   
 }
-
 
 
 .ejemplosInfluencias{
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: "in1 in2 in3 in4"
+  "cr1 cr2 cr3 cr4";
   padding: 1.5rem;
   border-radius:1rem;
-gap: 1rem;
+  justify-items: center;
+  gap: 1rem;
 
 
 
 }
+
+.in1{ grid-area:in1 ;}
+
+.in2{ grid-area:in2 ;}
+
+.in3{ grid-area:in3 ;}
+
+.in4{ grid-area:in4 ;}
+
+.cr1{ grid-area:cr1 ;}
+
+.cr2{ grid-area:cr2 ;}
+
+.cr3{ grid-area:cr3 ;}
+
+.cr4{ grid-area:cr4 ;}
+
+
+
+@media (max-width: 768px) {
+  .ejemplosInfluencias {
+    grid-template-columns:1fr;
+    grid-template-areas: "in1" "in1" "cr1" "in2" "cr2" "in3" "cr3" "in4" "cr4" ;
+ 
+  }
+  
+}
+
 
 .ejemplosInfluencias img{
 
@@ -319,12 +400,7 @@ transform: scale(1.15);
 
 }
 
-.creditos{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
- gap: 3rem;
 
-}
 
 /* cositas de Galería */
 
@@ -373,6 +449,7 @@ font-family:'Dosis', sans-serif;
 font-weight: 700;
 margin-top: 1rem;
 gap: 1rem;
+flex-wrap: wrap;
 
 
 
@@ -414,9 +491,14 @@ flex-wrap: wrap;
 
 .contacto{
 
-display: flex;
 justify-content: center;
 margin: 6rem
+
+}
+
+.formulito {
+margin-inline: 5rem;
+margin-block: 3rem;
 
 }
 
@@ -439,9 +521,43 @@ margin-bottom: 1rem;
   width: 15rem;
 }
 
-  .mapa {
+.botonera {
 
+display: flex;
+justify-content: center;
+
+}
+
+.enviar{
+
+  background-color: #CD5334;
+}
+
+.enviar:hover{
+
+  background-color: #813a28;
+}
+.deseo {
+
+  display: flex;
+  justify-content: center;
+  
+  }
+
+  .mapa {
+display: flex;
+justify-content: center;
 margin: 0.5rem;
 font-weight: 600;
+flex-wrap: wrap;
+margin-bottom: 3rem;
 
   }
+
+
+  @media only screen and (max-width: 768px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+    
+    }

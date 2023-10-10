@@ -10,18 +10,40 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 <body>
-    <nav class="menu">
-        <ul class="menu-list">
-            <li class="menu-item"><a href="../index.html">Inicio</a></li>
-            <li class="menu-item"><a href="./quien-soy.html">Quien soy</a></li> 
-            <li class="menu-item"><a href="./galeria.html">Galeria</a></li>
-            <li class="menu-item"><a href="./comic.html">Comic</a></li> 
-            <li class="menu-item"><a href="./contacto.html">Contacto</a></li> 
-
-        </ul>  
-        <img class="logo" src="../img/logo.png" alt="logo"> 
-    </nav>
-
+ 
+    <nav class="navbar navbar-expand-lg" style="background-color: #CD5334;">
+    
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./quien-soy.html">Quien soy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria.html">Galería</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link"  href="./comic.html">Cómic</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+        
+      </nav>
 
 <header class="banner">
 </header>
@@ -31,47 +53,50 @@
 </div>
 
  <main class="container presentacion">
-   <div class="row">
+  
 
-<div class="col-4">
+<div>
 <img class="saludo" src="../img/polenta.gif" alt="polenta saludando">
 
 </div>
 
-<div class="soyPolenta col-8">
+<div class="soyPolenta">
     <h3>Buenass, soy <strong> Polenta</strong></h3>
-    <h4>Soy un ilustrador uruguayo nacido en Montevideo, mi estilo está centrado
+    <h4>Soy un ilustrador uruguayo nacido en Montevideo,Suelo dedicarme al dibujo en digital aunque en ocasiones exploro diferentes técnicas. <br> Mi estilo personal está centrado
         en la creación de personajes excentricos y alocados, <br> me gusta tomar la realidad
-        como base para después deformarla hasta un punto caricaturesco y divertido <br>
-        (no soy realmente una polenta)
+        como base para después deformarla hasta un punto caricaturesco y divertido. <br>
+        Suelo subir comics de temas aleatorios,miniseries de comic o dibujos inspirados en las ideas que me dan mis seguidores <br>
+        (no soy realmente una polenta).
     </h4>
 </div>
-</div>
- </main>
 
-<section class="container influencias">
-    <div class="row">
-<div class="textoInfluencias col-12">
-<h4> estas son algunas de mis influencias más grandes,de las cuales forjé mi estilo actual:</h4>
-</div>
-</div>
+ </main >
 
-<div class="row">
-<div class="ejemplosInfluencias">
-        <img class="col-3" src="../img/influ1.jpg" alt="">
-        <img class="col-3" src="../img/influ2.jpg" alt="">
-        <img class="col-3" src="../img/influ3.jpg" alt="">
-        <img class="col-3" src="../img/influ4.jpg" alt="">
+
+ <div class="todoinfluencias">
+ <div class=" container textoInfluencias ">
+    <h4> estas son algunas de mis influencias más grandes,de las cuales forjé mi estilo actual:</h4>
     </div>
 </div>
- <div class="row">
-<div class="creditos">
-<h4 class="col-3">Pokemon</h4>
-<h4 class="col-3">Cuphead</h4>
-<h4 class="col-3">Little nightmares</h4>
-<h4 class="col-3">René Magritte</h4>
-</div>
-</div>
+    
+
+<section class="container influencias">
+   
+
+
+
+<div class="ejemplosInfluencias">
+        <img class="in1" src="../img/influ1.jpg" alt="Pokemon">
+        <img class="in2" src="../img/influ2.jpg" alt="Cuphead">
+        <img class="in3" src="../img/influ3.jpg" alt="Little nightmares">
+        <img class="in4" src="../img/influ4.jpg" alt="Magritte">
+        <h4 class="cr cr1">Pokemon</h4>
+        <h4 class="cr cr2">Cuphead</h4>
+        <h4 class="cr cr3">Little nightmares</h4>
+        <h4 class="cr cr4">René Magritte</h4>
+    </div>
+
+ 
 
 
 

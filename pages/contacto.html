@@ -11,62 +11,91 @@
 </head>
 <body>
     
-    <nav class="menu">
-        <ul class="menu-list">
-            <li class="menu-item"><a href="../index.html">Inicio</a></li>
-            <li class="menu-item"><a href="./quien-soy.html">Quien soy</a></li> 
-            <li class="menu-item"><a href="./galeria.html">Galeria</a></li>
-            <li class="menu-item"><a href="./comic.html">Comic</a></li> 
-            <li class="menu-item"><a href="./contacto.html">Contacto</a></li> 
-
-        </ul>  
-        <img class="logo" src="../img/logo.png" alt="logo"> 
-  </nav>
+    <nav class="navbar navbar-expand-lg" style="background-color: #CD5334;">
+    
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./quien-soy.html">Quien soy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria.html">Galería</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link"  href="./comic.html">Cómic</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+        
+      </nav>
        
     
   <header class="banner">
 </header>
 
-
-<main class="contacto">
-    <form class="formulario">				
-				
-        <h3 class="mensajito">Mandame un mensajito</h3>
-
-        <label>Nombre:</label><br>
-        <input class="respuesta"  type="text"required name="nombre" value=""><br>
-
-        <label>Apellido:</label><br>
-        <input class="respuesta"  type="text"required name="apellido" value=""><br>
-
-        <label>Email:</label><br>
-        <input class="respuesta"  type="email"required name="email" value=""><br>
-
-        <label>Teléfono (opcional):</label><br>
-        <input class="respuesta"  type="text" name="teléfono (opcional)" value=""><br>
-
-    <br>
-
-        <legend>Tu mensaje:</legend>
-        <textarea id="formulario"required name="mensaje" value="" rows="5" cols="30"></textarea><br>
-
+<main>
+<div class="formulito">
+    <h3 class="mensajito">Mandame un mensajito</h3>
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Tu Mail</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Tu Nombre</label>
+          <input type="text" class="form-control" id="inputPassword4">
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Escribe tu mensajito acá" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Tu mensaje</label>
+          </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Asunto </label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Resume el asunto del mensaje">
+        </div>
     
-    <legend>¿desea recibir mensajes promocionales?</legend>
-    <input type="radio" name="saber" value="Si">Si<br>
-    <input type="radio" name="saber" value="No">No<br>
-    
-      <input type="submit" value="enviar"> <input type="reset" value="reiniciar">
-      
+        <div class="col-12 deseo">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Deseo recibir mensajes promocionales
+            </label>
+          </div>
+        </div>
+        <div class=" botonera col-12">
+          <button type="submit" class="btn btn-primary enviar">Enviar</button>
+        </div>
+      </form>
+</div>
 
-</form>
+</main>
 
+<section>
+<h3 class="mensajito">Zona de envios</h3>
 <div class="mapa">
 
-     <h3 class="mensajito">Zona de envios</h3>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13089.95038327051!2d-56.175456093153606!3d-34.89421126572706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8051b30d290f%3A0xafa4443090520bbc!2sTres%20Cruces%2C%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1694999353092!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13089.95038327051!2d-56.175456093153606!3d-34.89421126572706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8051b30d290f%3A0xafa4443090520bbc!2sTres%20Cruces%2C%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1694999353092!5m2!1ses-419!2suy" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 </div>
-</main>
+</section>
+
 
 
 
