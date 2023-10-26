@@ -1,0 +1,23 @@
+
+
+/* cositas de index */
+
+
+.hero-image {
+    background-image: url("../img/herobeta.png");
+    height: 150vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+   
+  }

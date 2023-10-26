@@ -1,0 +1,76 @@
+
+
+/* cositas de contacto */
+
+.contacto{
+
+    justify-content: center;
+    margin: 6rem
+    
+    }
+    
+    .formulito {
+    margin-inline: 5rem;
+    margin-block: 3rem;
+    
+    .botonera {
+    
+      display: flex;
+      justify-content: center;
+      
+      }
+      
+      .enviar{
+      
+        background-color: #CD5334;
+
+        &:hover{
+      
+          background-color: #813a28;
+        }
+      }
+      
+     
+      .deseo {
+      
+        display: flex;
+        justify-content: center;
+        
+        }
+
+    }
+    
+    .formulario {
+    
+      font-family: $fuentesecundaria;
+      margin-top: 0.5rem;
+      margin-left: 1rem;
+      
+      }
+    
+    .mensajito {
+    text-align: center;
+    margin-bottom: 1rem;
+    
+    }
+    
+    .respuesta{
+    
+      width: 15rem;
+    }
+    
+
+    
+      .mapa {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    font-weight: 600;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    
+      }
+    
+    
+    
+     

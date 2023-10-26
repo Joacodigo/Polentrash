@@ -1,0 +1,32 @@
+@media (max-width: 768px){
+  
+    .tarjetas{
+    
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem;
+    
+    }
+
+    .presentacion {
+          
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo"
+        "texto" "texto";
+      }
+
+
+      .ejemplosInfluencias {
+        grid-template-columns:1fr;
+        grid-template-areas: "in1" "in1" "cr1" "in2" "cr2" "in3" "cr3" "in4" "cr4" ;
+     
+      }
+
+    }
+
+    @media only screen and (max-width: 768px) {
+        [class*="col-"] {
+          width: 100%;
+        }
+        
+      }

@@ -1,0 +1,93 @@
+
+
+/* cositas de Galería */
+
+
+.galeria {
+
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    align-items: baseline;
+    
+    }
+    
+    .tituloDibujos{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    
+    }
+    
+    
+    .galeria img{
+    width: 25rem;
+    margin: top 6rem; ;
+    border-color:black ;
+    border-width: 1rem;
+    padding: 0.5rem;
+    
+    }
+    
+    .modal-body img{
+    
+      width: 30rem;
+      
+      }
+    
+    .menuInterno {
+      
+      display: flex;
+      list-style: none;
+      text-decoration: none;
+    justify-content: center;
+    font-family:'Dosis', sans-serif;
+    font-weight: 700;
+    margin-top: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+
+    &:hover{
+    
+      color: #ffffff;
+      
+      }
+    
+
+      .menuItem a {
+      
+        text-align: center;
+        display: inline-block;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+        background-color: #b8bd5c;
+        border-radius: 3rem;
+  
+  
+        &:hover{
+          background-color:#878a46
+        }
+      }
+      
+    
+    }
+    
+   
+     
+
+    
+   
+    
+    .seccion {
+    
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    }

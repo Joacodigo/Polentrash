@@ -1,0 +1,67 @@
+
+/* cositas de comic */
+
+.tarjetas {
+    margin-inline: 5rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+
+    .tarjeta {
+      background-color: $colorsecundario;
+      flex-basis: 100%;
+      border: 3px solid rgb(195, 195, 102);
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+    }
+    
+  
+  
+    .carousel{
+  
+  width: 40rem;
+  
+    }
+  
+    
+    
+    
+  
+  
+  .opinion {
+  
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+
+  .like{
+  
+    font-size: 2rem;
+    }
+
+  
+
+    .dislike {
+  
+      font-size: 2rem;
+
+
+      &:hover{
+  
+        display: none;
+        
+        
+        }
+      
+      }
+      
+  }
+  
+
+  
+
+
+  

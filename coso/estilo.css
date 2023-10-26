@@ -11,6 +11,12 @@
   box-sizing: border-box;
   } 
 
+  *::selection{
+
+background-color: #a5a94d;
+
+  }
+
   body {
 
     background-color: #F7FF58;
@@ -258,7 +264,7 @@ display: none;
 
 .hero-image {
   background-image: url("../img/herobeta.png");
-  height: 70rem;
+  height: 150vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -315,10 +321,61 @@ grid-area: texto;
 
 }
 
-.todoinfluencias{
+.todoinfluencias {
 
 display: flex;
 justify-content: center;
+
+}
+
+.dato {
+
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+
+}
+
+
+
+.datobtn {
+  font-size: 1.5rem;
+  font-family: 'Dosis', sans-serif;
+background-color: rgb(186, 197, 124);
+color: black;
+margin-top: 3rem;
+border: none;
+}
+
+
+@keyframes si {
+  0% { transform: translate(0,0px) ; }
+  50% { transform: translate(0,10px) ; }
+  100% { transform: translate(0,0px) ; }
+  
+}
+  
+
+.datobtn {
+      
+  animation: si ;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+    }
+
+
+
+.card-body{
+background-color:rgb(254, 254, 174) ;
+  font-family: 'Dosis', sans-serif;
+margin-top: 1rem;
+margin-left: 1rem;
+}
+
+.datobtn:hover{
+
+background-color:rgb(161, 161, 84) ;
 
 }
 
@@ -389,7 +446,7 @@ margin: 1rem;
 .ejemplosInfluencias img{
 
 border-radius: 50%;
-width: 13rem;
+width: 34vh;
 transition:all 300ms;
 
 }

@@ -1,0 +1,39 @@
+
+/* cositas de menú */
+
+.btn {
+
+
+    color: white;
+    border-color: white;
+  }
+  
+  
+    
+    .nav-item a{
+      color: white;
+    }
+  
+  
+    .menu-list {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+  
+   }
+  
+  
+  
+  
+  .active {
+      color: gray;
+  }
+  
+  
+  .logo{
+   padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    
+  
+    }

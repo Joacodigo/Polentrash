@@ -1,0 +1,171 @@
+
+
+/* cositas de Quien soy */
+
+.presentacion {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo texto texto";
+    justify-items: center;
+    
+    .saludo {
+      padding: 3rem;
+    border-radius: 100%;
+    width: 20rem;
+    grid-area:logo ;
+    
+    
+    }
+    
+    .soyPolenta {
+      background-color: $colorsecundario ;
+    padding: 1.5rem;
+    border-radius:1rem;
+    grid-area: texto;
+    
+    }
+    }
+    
+  
+    
+    
+   
+    
+ 
+    
+    .todoinfluencias {
+    
+    display: flex;
+    justify-content: center;
+    
+
+    .textoInfluencias{
+    
+      background-color: $colorsecundario ;
+    width: fit-content;
+      padding: 1.5rem;
+      border-radius:1rem;
+    margin: 1rem;
+    
+    
+    
+    }
+    }
+    
+    .dato {
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+    }
+    
+    
+    
+    .datobtn {
+      font-size: 1.5rem;
+      font-family: 'Dosis', sans-serif;
+    background-color: rgb(186, 197, 124);
+    color: black;
+    margin-top: 3rem;
+    border: none;
+    }
+    
+    
+    @keyframes si {
+      0% { transform: translate(0,0px) ; }
+      50% { transform: translate(0,10px) ; }
+      100% { transform: translate(0,0px) ; }
+      
+    }
+      
+    
+    .datobtn {
+          
+      animation: si ;
+      animation-duration: 0.8s;
+      animation-iteration-count: infinite;
+        }
+    
+    
+    
+    .card-body{
+    background-color:$colorsecundario ;
+      font-family: 'Dosis', sans-serif;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    }
+    
+    .datobtn:hover{
+    
+    background-color:rgb(161, 161, 84) ;
+    
+    }
+    
+   
+    
+    
+    .influencias{
+     padding: 1rem;
+     margin-bottom: 1rem;
+
+     .ejemplosInfluencias{
+    
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr 0.5fr;
+      grid-template-areas: "in1 in2 in3 in4"
+      "cr1 cr2 cr3 cr4";
+      padding: 1.5rem;
+      border-radius:1rem;
+      justify-items: center;
+      gap: 1rem;
+    
+    
+      
+    .in1{ grid-area:in1 ;}
+    
+    .in2{ grid-area:in2 ;}
+    
+    .in3{ grid-area:in3 ;}
+    
+    .in4{ grid-area:in4 ;}
+    
+    .cr1{ grid-area:cr1 ;}
+    
+    .cr2{ grid-area:cr2 ;}
+    
+    .cr3{ grid-area:cr3 ;}
+    
+    .cr4{ grid-area:cr4 ;}
+    
+    
+    }
+      
+    }
+    
+    
+  
+    
+    
+    
+ 
+    
+    .ejemplosInfluencias img{
+    
+    border-radius: 50%;
+    width: 34vh;
+    transition:all 300ms;
+
+    &:hover{
+    
+      transform: scale(1.15);
+      
+      }
+    
+    }
+    
+   
+    
